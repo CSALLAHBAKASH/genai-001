@@ -21,7 +21,7 @@ def get_gemini_response(input, image):
 st.set_page_config(page_title='Gemini Pro')
 st.header("Gemini LLM App")
 
-input = st.text_input("Input: ", key='input')
+input = st.text_input("Input: ", key='input',value="describe image")
 
 
 uploaded_file = st.file_uploader("Upload Image", type=['jpg', 'png', 'jpeg'])
